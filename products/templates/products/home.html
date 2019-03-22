@@ -6,5 +6,9 @@
 </head>
 <body>
     <h3>This is a test for homepage</h3>
+        {% for cc in c %}
+          <img src="{{ cc.test_field.url }}">
+             <p>{{ cc.name }}</p>
+        {% endfor %}
 </body>
 </html>
